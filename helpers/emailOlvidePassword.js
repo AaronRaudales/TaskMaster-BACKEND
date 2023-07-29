@@ -14,7 +14,7 @@ const emailOlvidePassword = async(datos) => {
     
     //Enviar el email
     const info = await transport.sendMail({
-        from: "TaskMaster - Tu administrador de tareas",
+        from: '"TaskMaster - Tu administrador de tareas" <apv@correo.com>',
         to: email,
         subject:"Restablece tu Contraseña",
         text: "Restablece tu Contraseña",

@@ -14,7 +14,7 @@ const emailRegistro = async(datos) => {
     
     //Enviar el email
     const info = await transport.sendMail({
-        from: "TaskMaster - Tu administrador de tareas",
+        from: '"TaskMaster - Tu administrador de tareas" <apv@correo.com>',
         to: email,
         subject:"Comprobacion de tu cuenta en TaskMaster",
         text: "Comprueba tu cuenta en TaskMaster",
